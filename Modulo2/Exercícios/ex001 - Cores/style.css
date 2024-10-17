@@ -7,13 +7,14 @@
 
 body {
     background-image: linear-gradient(to bottom, #f1d8c9, #f2c3a9);
+    height: 945px;
 }
 
 main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 15px #27476e83;
-    width: 600px;
+    width: 800px;
     padding: 10px;
     margin: auto;
 }
@@ -26,6 +27,9 @@ h1 {
 
 h2 {
     color: #006992;
+    box-shadow: 5px 10px 10px ;
+    border-radius: 10px;
+    width: 90px;
 }
 
 p {
