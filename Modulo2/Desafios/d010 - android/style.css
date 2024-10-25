@@ -4,3 +4,8 @@
     font-family: 'idroid';
     src: url('guanabara/fontes/idroid.otf') format('OpenType');
 }
+
+header {
+    background-image: linear-gradient(135deg, #eaf8bf, #006992,  #001d4a);
+    
+}
