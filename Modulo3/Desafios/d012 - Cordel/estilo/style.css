@@ -9,3 +9,90 @@
     --fonte1: 'Sriracha';
 }
 
+* {
+    margin: 0px;
+}
+body {
+    max-width: 100%;
+}
+header {
+    /*font-style -> font-weight -> font-size -> font-family*/
+    font: normal bolder 2em 'Passion One';
+    color: white;
+    background-color: black;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 1vh;
+    max-height: 100px;
+    min-height: 200px;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+header p {
+    font: normal lighter .7em 'arial';
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+main{
+    font: normal normal 3.5vw 'Sriracha';
+    margin: auto;
+
+}
+
+section {
+    padding: 7rem 1rem;
+    width: 40%;
+    text-align: left;
+}
+
+.container {
+    max-height: 600px;
+    min-height: 800px;
+    max-width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#girassol {
+    background-image: url('../imagens/background001.jpg');
+}
+
+#papel {
+    background-image: url('../imagens/background002.jpg');
+}
+
+.conteudo {
+    background-color: rgba(0, 0, 0, 0.408);
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 500px;
+    display: flexbox;
+    position: absolute;
+    
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.conteudo p {
+    text-align: left;
+    padding: 10px;
+    
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
