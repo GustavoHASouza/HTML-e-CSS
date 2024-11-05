@@ -11,9 +11,10 @@
 
 * {
     margin: 0px;
+    padding: 0px;
 }
 body {
-    max-width: 100%;
+    min-height: 100vh;
 }
 header {
     /*font-style -> font-weight -> font-size -> font-family*/
@@ -22,17 +23,20 @@ header {
     background-color: black;
     background-attachment: fixed;
     text-align: center;
-    padding: 1vh;
-    max-height: 100px;
-    min-height: 200px;
 }
 
 
 a:hover {
     text-decoration: underline;
 }
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 5vw;
+}
 header p {
-    font: normal lighter .7em 'arial';
+    font: normal lighter .4em 'arial';
+    padding-bottom: 50px;
 }
 a {
     color: white;
@@ -46,16 +50,28 @@ main{
 
 }
 
-section {
-    padding: 7rem 1rem;
-    width: 40%;
+section , article {
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
     text-align: left;
 }
 
+p {
+    padding-bottom: 2em;
+    font-size: 3vw;
+}
+
+article p {
+    background-color: rgba(0, 0, 0, 0.408);
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    line-height: 2em;
+}
+
 .container {
-    max-height: 600px;
-    min-height: 800px;
-    max-width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,28 +87,15 @@ section {
     background-image: url('../imagens/background002.jpg');
 }
 
-.conteudo {
-    background-color: rgba(0, 0, 0, 0.408);
-    max-width: 350px;
-    min-width: 300px;
-    max-height: 500px;
-    display: flexbox;
-    position: absolute;
-    
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-}
-
-.conteudo p {
-    text-align: left;
-    padding: 10px;
-    
-}
 
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 10px;
+}
+footer p {
+    margin: 0px;
+    padding: 0px;
 }
