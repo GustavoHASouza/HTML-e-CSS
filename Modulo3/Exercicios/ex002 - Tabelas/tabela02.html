@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -20,12 +21,27 @@
             background-color: grey;
             color: white;
         }
+        thead tr th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+        .num {
+            text-align: right;
+        }
+        tbody tr:nth-child(odd) /* impar*/{
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(even) /* par*/{
+            background-color: rgb(255, 255, 255);
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas Grandes</h1>
     <!--Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -34,32 +50,136 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="num">45 919 049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 168 791</td>
+                <td class="num">21 168 791</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 264 943</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex recusandae fuga ratione quibusdam ducimus voluptas minus necessitatibus, sapiente error, dolorum repellat? Iusto doloremque labore dicta ut repellendus impedit accusamus amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolore maxime dolores asperiores quas minima deserunt, laboriosam explicabo, soluta recusandae aperiam sit quaerat at, necessitatibus illum architecto! Aperiam, expedita <perferendis class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ad esse sed ipsa expedita molestiae, amet quod dolor obcaecati eligendi, placeat totam quae nam aperiam quaerat veritatis! Corporis, harum at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus laudantium maxime omnis temporibus exercitationem impedit modi tempore molestias consectetur facere deserunt obcaecati magnam culpa, illo laborum, doloribus cumque! Quisquam?</perferendis></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex recusandae fuga ratione quibusdam ducimus voluptas minus necessitatibus, sapiente error, dolorum repellat? Iusto doloremque labore dicta ut repellendus impedit accusamus amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolore maxime dolores asperiores quas minima deserunt, laboriosam explicabo, soluta recusandae aperiam sit quaerat at, necessitatibus illum architecto! Aperiam, expedita <perferendis class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ad esse sed ipsa expedita molestiae, amet quod dolor obcaecati eligendi, placeat totam quae nam aperiam quaerat veritatis! Corporis, harum at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus laudantium maxime omnis temporibus exercitationem impedit modi tempore molestias consectetur facere deserunt obcaecati magnam culpa, illo laborum, doloribus cumque! Quisquam?</perferendis></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex recusandae fuga ratione quibusdam ducimus voluptas minus necessitatibus, sapiente error, dolorum repellat? Iusto doloremque labore dicta ut repellendus impedit accusamus amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolore maxime dolores asperiores quas minima deserunt, laboriosam explicabo, soluta recusandae aperiam sit quaerat at, necessitatibus illum architecto! Aperiam, expedita <perferendis class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ad esse sed ipsa expedita molestiae, amet quod dolor obcaecati eligendi, placeat totam quae nam aperiam quaerat veritatis! Corporis, harum at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus laudantium maxime omnis temporibus exercitationem impedit modi tempore molestias consectetur facere deserunt obcaecati magnam culpa, illo laborum, doloribus cumque! Quisquam?</perferendis></p>
 </body>
 </html>
